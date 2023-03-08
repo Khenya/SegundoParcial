@@ -29,9 +29,6 @@ public class Client {
         documento.show();
         documento = version.revertirCAmbio(drive.getVersion(numeroCambios-1));
         documento.show();
-
-
-
         documento = version.revertirCAmbio(drive.getVersion(numeroCambios));
         documento.show();
 
