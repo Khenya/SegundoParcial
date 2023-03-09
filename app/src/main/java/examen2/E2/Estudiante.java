@@ -2,12 +2,24 @@ package examen2.E2;
 
 public class Estudiante extends Member{
     private int numreoMatricula;
+    private String name;
     
 
-    public Estudiante(ICanalComunicacion canalComunicacion, int numreoMatricula) {
-        super(canalComunicacion,"Estudiantes");
+    public Estudiante(ICanalComunicacion canalComunicacion, int numreoMatricula, String name) {
+        super(canalComunicacion);
         this.numreoMatricula = numreoMatricula;
+        this.name = name;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    
 
     public int getNumreoMatricula() {
         return numreoMatricula;
@@ -20,8 +32,8 @@ public class Estudiante extends Member{
     @Override
     public void messageReceived(String msg) {
         System.out.println("mensaje: ");
-        this.show();
-        
+        System.out.println(name);
+        System.out.println(numreoMatricula);
         System.out.println(msg);
     }
 

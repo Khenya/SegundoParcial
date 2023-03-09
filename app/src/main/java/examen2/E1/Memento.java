@@ -9,7 +9,7 @@ public class Memento {
     }
 
 
-    public Memento(Documento documentoAnterior) {
-        this.documentoAnterior = documentoAnterior;
+    public Memento(Documento d) {
+        documentoAnterior = d;
     }
 }

@@ -21,6 +21,6 @@ public class Documento {
     }
     public void show() {
 		System.out.println("*********** Documento ***********");
-		System.out.println( cambio);
+		System.out.println( getCambio());
 	}
 }
